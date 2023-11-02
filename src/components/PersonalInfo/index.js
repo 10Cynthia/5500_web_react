@@ -15,6 +15,7 @@ import storage from '../../utils/firebaseConfig';
 
 const defaultFile = "/images/avatar/profile.png";
 const PersonalInfo = ({login, country_}) => {
+
     const dispatch = useDispatch()
     const profile = useSelector(state => state.profile)
     const [profile_, setProfile_] = useState(profile)
@@ -36,6 +37,7 @@ const PersonalInfo = ({login, country_}) => {
       } else {
         dispatch(updateProfile(profile_));
       }
+
       const newProfile = url === "" ? profile_ : {...profile_, avatar: url};
         // write to userProfile collection
       const params = {
@@ -185,6 +187,7 @@ const PersonalInfo = ({login, country_}) => {
                     style={{ display: "none" }}
                   />
                 </div>
+
                 <label
                   className={`d-flex justify-content-center align-items-center mt-2 mb-2`}
                 >
@@ -239,6 +242,7 @@ const PersonalInfo = ({login, country_}) => {
         </div>
       )}
     </div>
+
   );
 };
 

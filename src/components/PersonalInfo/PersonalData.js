@@ -6,6 +6,7 @@ export default [
         unit: "Y",
         image: 'age.jpeg'
     },
+
     {
         _id: 2,
         columnName: "Interest",
@@ -13,6 +14,7 @@ export default [
         unit: "",
         image: 'heartbeat.png'
     },
+
     {
         _id: 3,
         columnName: "Hometown",

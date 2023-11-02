@@ -16,28 +16,29 @@ const PersonalInfoItem = ({info, edit, setProfile}) => {
   };
 
   return (
-    <div className={`row sidebar-item p-3 ms-2 me-2`}>
-      <div className={`col-2 d-flex align-items-center`}>
+    <div className = {`row sidebar-item p-3 ms-2 me-2`}>
+      <div className = {`col-2 d-flex align-items-center`}>
         <img
-          className={`rounded-circle`}
-          src={`./images/icons/${info.image}`}
-          width={`30px`}
-          height={`30px`}
+          className = {`rounded-circle`}
+          src = {`./images/icons/${info.image}`}
+          width = {`30px`}
+          height = {`30px`}
         />
       </div>
-      <div className={`col-5 d-flex align-items-center`}>
+
+      <div className = {`col-5 align-items-center d-flex`}>
         <h4>{info.columnName} :</h4>
       </div>
-      <div className={`col fw-bold d-flex align-items-center ps-0`}>
+      <div className = {`col fw-bold d-flex align-items-center ps-0`}>
         {!edit && profile[key]}
         {edit && (
           <input
-            className="form-control control-input me-2"
-            id={info.id}
-            name={info.columnName}
-            type="text"
-            placeholder={info.columnName}
-            value={value}
+            className = "form-control control-input me-2"
+            id = {info.id}
+            name = {info.columnName}
+            type = "text"
+            placeholder = {info.columnName}
+            value = {value}
             onChange={(e) => handleChange(e)}
           />
         )}{" "}

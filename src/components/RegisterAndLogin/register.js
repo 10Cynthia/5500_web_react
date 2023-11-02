@@ -6,7 +6,9 @@ import { COUNTRY_OPTIONS } from "./countriesData.js";
 import { useDispatch, useSelector } from "react-redux";
 import { registerThunk } from "../../utils/users-thunks";
 
+
 const Register = () => {
+
   const [username, setUsername] = useState("");
   const [password, setPassword] = useState("");
   const [country, setCountry] = useState("");
@@ -38,6 +40,7 @@ const Register = () => {
       image: { avatar: true, src: "/images/avatar/pro.jpg" },
     },
   ];
+
   COUNTRY_OPTIONS.map((option) => {
     return (option.flag = option.flag.toLowerCase());
   });
@@ -61,6 +64,7 @@ const Register = () => {
       setError("Error! Fields below must be filled!");
       return;
     }
+
     setError(null);
     console.log("userType is: ", userType);
     const newUser = { username, password, country, gender, userType };
@@ -73,6 +77,7 @@ const Register = () => {
       }
     });
   };
+
   const togglePasswordTypeHandler = (lastState) => {
     setShowPassword(!lastState);
   };

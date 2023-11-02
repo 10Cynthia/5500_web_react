@@ -12,13 +12,16 @@ const Login = () => {
   const { currentUser } = useSelector((state) => state.users);
   const navigate = useNavigate();
   const dispatch = useDispatch();
+
+  const togglePasswordTypeHandler = (lastState) => {
+    setShowPassword(!lastState);
+  };
+
   const handlePasswordChange = (e) => {
     setPasswordInput(e.target.value);
     e.preventDefault();
   };
-  const togglePasswordTypeHandler = (lastState) => {
-    setShowPassword(!lastState);
-  };
+
   const LoginBtnHandler = () => {
     setError(null);
     const loginUser = { username, passwordInput };
@@ -69,6 +72,7 @@ const Login = () => {
                     value={passwordInput}
                     placeholder="Password"
                   />
+
                   <div
                     className="btn position-absolute d-eye-icon"
                     onClick={() => togglePasswordTypeHandler(showPassword)}
@@ -79,6 +83,7 @@ const Login = () => {
                       <i className="bi bi-eye"></i>
                     )}
                   </div>
+
                 </div>
               </div>
             )}
@@ -99,7 +104,9 @@ const Login = () => {
             )}
             {currentUser && <h2>Welcome {currentUser.username}</h2>}
           </div>
+
           <div className="col-2"></div>
+
         </div>
       </div>
     </>

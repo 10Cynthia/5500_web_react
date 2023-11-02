@@ -4,7 +4,7 @@
     /* align-content: center; */
     border-radius: 6px;
     background-color: #f2dcd8;
-    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.2);
     padding: 2rem;
     text-align: center;
     color: white;
@@ -95,7 +95,7 @@
 
 .d-eye-icon {
     bottom: 5px;
-    right: 0px;
+    right: 0;
     border-radius: 80%;
 }
 

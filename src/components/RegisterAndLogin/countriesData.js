@@ -266,6 +266,7 @@ export const COUNTRY_OPTIONS = [
     value: "GS",
     flag: "GS",
   },
+
   { text: "South Sudan", key: "SS", value: "SS", flag: "SS" },
   { text: "Spain", key: "ES", value: "ES", flag: "ES" },
   { text: "Sri Lanka", key: "LK", value: "LK", flag: "LK" },
@@ -310,6 +311,7 @@ export const COUNTRY_OPTIONS = [
     value: "VE",
     flag: "VE",
   },
+
   { text: "Viet Nam", key: "VN", value: "VN", flag: "VN" },
   { text: "Virgin Islands, British", key: "VG", value: "VG", flag: "VG" },
   { text: "Virgin Islands, U.S.", key: "VI", value: "VI", flag: "VI" },
