@@ -65,7 +65,7 @@ const Footer = () => {
         </ul>
         <ul>
           <li>
-            <b>CS5500 GROUP 9</b>
+            <b>CS5500 GROUP 7</b>
           </li>
           <li>
             <a href="https://www.facebook.com/northeastern/">Facebook</a>
@@ -84,7 +84,7 @@ const Footer = () => {
         </ul>
       </div>
       <div className="fText">
-        Copyright © 2023 FitnessLover - CS5500 Group 9 · All Rights Reserved
+        Copyright © 2023 VideoLover - CS5500 Group 7 · All Rights Reserved
       </div>
     </div>
   );

@@ -111,9 +111,6 @@ const Feed = () => {
                     <Sidebar selectedCategory={selectedCategory} setSelectedCategory={setSelectedCategory} />
                 }
 
-                <Typography className="copyright" variant="body2" sx={{ mt: 1.5, color: "#000", }}>
-                    Copyright © 5610 23sp GROUP 23
-                </Typography>
             </Box>
 
             <Box p={2} sx={{ overflowY: "auto", height: "90vh", flex: 2 }}>
